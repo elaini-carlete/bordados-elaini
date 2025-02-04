@@ -4,7 +4,7 @@ export default function Header() {
     return (
         <header className="flex flex-col desktop:flex-row desktop:items-center">
             <a className="flex justify-center align-center">
-                <img className="w-52" src="/../../public/logo-bordados-elaini-preview.png" alt="Logo" />
+                <img className="w-52" src="/public/logo-bordados-elaini-preview.png" alt="Logo" />
             </a>
             
             <div className="relative before:absolute before:top-[-5px] before:w-[85%] before:left-1/2 before:-translate-x-1/2 before:h-[calc(100%+10px)] before:border-2 before:z-[-1] before:animate-colorPulse desktop:justify-around w-full">

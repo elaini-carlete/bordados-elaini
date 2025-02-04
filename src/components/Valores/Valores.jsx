@@ -110,13 +110,13 @@ function Categoria({ titulo, preco, imagens }) {
             <div className="flex items-center justify-center">
                 {imagensLength > 1 && (
                     <button onClick={imagemAnterior} className="p-2 w-8 h-8 rotate-180 transition-opacity duration-200 ease-in-out">
-                        <img src="/../../public/seta.png" alt="Seta" />
+                        <img src="/public/seta.png" alt="Seta" />
                     </button>
                 )}
                 <img style={{ width: '150px', height: 'auto' }} src={imagens[indice]} alt={titulo} />
                 {imagensLength > 1 && (
                     <button onClick={proximaImagem} className="p-2 w-8 h-8 transition-opacity duration-200 ease-in-out">
-                        <img src="/../../public/seta.png" alt="Seta" />
+                        <img src="/public/seta.png" alt="Seta" />
                     </button>
                 )}
             </div>
