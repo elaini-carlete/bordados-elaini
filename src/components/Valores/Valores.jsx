@@ -5,77 +5,77 @@ const categorias = [
         titulo: "Chaveiros P",
         preco: "10,00",
         imagens: [
-            "src/images/chaveiros/chaveiro-letra-e-rosa.png",
-            "src/images/chaveiros/chaveiro-letra-e-preta.png",
-            "src/images/chaveiros/chaveiro-letra-a-amarela.png"
+            "public/chaveiros/chaveiro-letra-e-rosa.png",
+            "public/chaveiros/chaveiro-letra-e-preta.png",
+            "public/chaveiros/chaveiro-letra-a-amarela.png"
         ]
     },
     {
         titulo: "Chaveiros M",
         preco: "15,00",
         imagens: [
-            "src/images/chaveiros/chaveiro-borboleta-azul.png",
-            "src/images/chaveiros/chaveiro-letra-b-roxa.png",
-            "src/images/chaveiros/chaveiro-borboleta-laranja.png",
-            "src/images/chaveiros/chaveiro-borboleta-roxa.png",
-            "src/images/chaveiros/chaveiro-letra-g-azul.png",
-            "src/images/chaveiros/chaveiro-borboleta-verde.png",
-            "src/images/chaveiros/chaveiro-letra-a-azul.png",
-            "src/images/chaveiros/chaveiro-calopsita.png",
-            "src/images/chaveiros/chaveiro-naruto.png",
-            "src/images/chaveiros/chaveiro-zoro.png",
-            "src/images/chaveiros/chaveiro-luffy.png",
-            "src/images/chaveiros/chaveiro-darth-vader.png",
-            "src/images/chaveiros/enfeite-papai-noel.png",
-            "src/images/chaveiros/chaveiro-pokebola.png"
+            "public/chaveiros/chaveiro-borboleta-azul.png",
+            "public/chaveiros/chaveiro-letra-b-roxa.png",
+            "public/chaveiros/chaveiro-borboleta-laranja.png",
+            "public/chaveiros/chaveiro-borboleta-roxa.png",
+            "public/chaveiros/chaveiro-letra-g-azul.png",
+            "public/chaveiros/chaveiro-borboleta-verde.png",
+            "public/chaveiros/chaveiro-letra-a-azul.png",
+            "public/chaveiros/chaveiro-calopsita.png",
+            "public/chaveiros/chaveiro-naruto.png",
+            "public/chaveiros/chaveiro-zoro.png",
+            "public/chaveiros/chaveiro-luffy.png",
+            "public/chaveiros/chaveiro-darth-vader.png",
+            "public/chaveiros/enfeite-papai-noel.png",
+            "public/chaveiros/chaveiro-pokebola.png"
         ]
     },
     {
         titulo: "Chaveiros G",
         preco: "20,00",
         imagens: [
-            "src/images/chaveiros/chaveiro-chopper.png",
-            "src/images/chaveiros/chaveiro-godzilla.png",
-            "src/images/chaveiros/chaveiro-noite-estrelada.png",
-            "src/images/chaveiros/chaveiro-anya.png"
+            "public/chaveiros/chaveiro-chopper.png",
+            "public/chaveiros/chaveiro-godzilla.png",
+            "public/chaveiros/chaveiro-noite-estrelada.png",
+            "public/chaveiros/chaveiro-anya.png"
         ]
     },
     {
         titulo: "Chaveiros Casal",
         preco: "30,00",
-        imagens: ["src/images/chaveiros/chaveiro-stitch.png"]
+        imagens: ["public/chaveiros/chaveiro-stitch.png"]
     },
     {
         titulo: "Brincos P",
         preco: "5,00",
         imagens: [
-            "src/images/brincos/brinco-abelha.png",
-            "src/images/brincos/brinco-borboleta-verde.png",
-            "src/images/brincos/brinco-cogumelo.png",
-            "src/images/brincos/brinco-borboleta-roxa.png",
-            "src/images/brincos/brinco-pata-de-gato.png",
-            "src/images/brincos/brinco-coracao.png"
+            "public/brincos/brinco-abelha.png",
+            "public/brincos/brinco-borboleta-verde.png",
+            "public/brincos/brinco-cogumelo.png",
+            "public/brincos/brinco-borboleta-roxa.png",
+            "public/brincos/brinco-pata-de-gato.png",
+            "public/brincos/brinco-coracao.png"
         ]
     },
     {
         titulo: "Toalhas de Mão",
         preco: "30,00",
         imagens: [
-            "src/images/toalhas/toalha-elisa.png",
-            "src/images/toalhas/toalha-maria.png",
-            "src/images/toalhas/toalha-henrique.png",
-            "src/images/toalhas/toalha-sophia.png"
+            "public/toalhas/toalha-elisa.png",
+            "public/toalhas/toalha-maria.png",
+            "public/toalhas/toalha-henrique.png",
+            "public/toalhas/toalha-sophia.png"
         ]
     },
     {
         titulo: "Panos com Crochê",
         preco: "100,00",
-        imagens: ["src/images/toalhas/toalha-florida.png"]
+        imagens: ["public/toalhas/toalha-florida.png"]
     },
     {
         titulo: "Toalhas de Banho",
         preco: "200,00",
-        imagens: ["src/images/toalhas/toalha-brayan.png"]
+        imagens: ["public/toalhas/toalha-brayan.png"]
     }
 ];
 
@@ -110,13 +110,13 @@ function Categoria({ titulo, preco, imagens }) {
             <div className="flex items-center justify-center">
                 {imagensLength > 1 && (
                     <button onClick={imagemAnterior} className="p-2 w-8 h-8 rotate-180 transition-opacity duration-200 ease-in-out">
-                        <img src="../../src/images/seta.png" alt="Seta" />
+                        <img src="../../public/seta.png" alt="Seta" />
                     </button>
                 )}
                 <img style={{ width: '150px', height: 'auto' }} src={imagens[indice]} alt={titulo} />
                 {imagensLength > 1 && (
                     <button onClick={proximaImagem} className="p-2 w-8 h-8 transition-opacity duration-200 ease-in-out">
-                        <img src="../../src/images/seta.png" alt="Seta" />
+                        <img src="../../public/seta.png" alt="Seta" />
                     </button>
                 )}
             </div>
