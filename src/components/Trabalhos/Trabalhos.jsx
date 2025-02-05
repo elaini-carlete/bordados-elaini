@@ -48,13 +48,13 @@ export default function Trabalhos() {
 
     return (
         <div className="text-center mt-20">
-            <h2 className="text-2xl font-bold">Meus Trabalhos</h2>
+            <h2 className="font-anaheim text-2xl font-bold">Meus Trabalhos</h2>
             
             {[{ title: "Chaveiros", items: chaveiros, index: indexChaveiros, setIndex: setIndexChaveiros },
               { title: "Brincos", items: brincos, index: indexBrincos, setIndex: setIndexBrincos },
               { title: "Toalhas", items: toalhas, index: indexToalhas, setIndex: setIndexToalhas }].map(({ title, items, index, setIndex }) => (
                 <div key={title} className="mt-6">
-                    <h3 className="text-xl italic pb-4">{title}:</h3>
+                    <h3 className="font-comme text-xl italic pb-4">{title}:</h3>
                     <div className="flex items-center justify-center gap-4">
                         <button 
                             onClick={() => handlePrev(setIndex)}

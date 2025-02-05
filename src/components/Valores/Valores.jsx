@@ -82,9 +82,9 @@ const categorias = [
 export default function Valores() {
     return (
         <div>
-            <h2 className="text-2xl font-bold flex justify-center align-center mt-20">Valores</h2>
+            <h2 className="font-anaheim text-2xl font-bold flex justify-center align-center mt-20">Valores</h2>
             <div className="flex justify-center items-center">
-                <div className="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 w-8/12 desktop:w-7/12">
+                <div className="font-comme grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 w-8/12 desktop:w-7/12">
                     {categorias.map((categoria, index) => (
                         <Categoria key={index} titulo={categoria.titulo} preco={categoria.preco} imagens={categoria.imagens} />
                     ))}

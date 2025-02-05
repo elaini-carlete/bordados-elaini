@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 export default function Header() {
     return (
-        <header className="flex flex-col desktop:flex-row desktop:items-center">
+        <header className="font-inter flex flex-col desktop:flex-row desktop:items-center">
             <a className="flex justify-center align-center">
                 <img className="w-52" src="/public/logo-bordados-elaini-preview.png" alt="Logo" />
             </a>
