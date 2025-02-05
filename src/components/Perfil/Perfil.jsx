@@ -5,7 +5,7 @@ export default function Perfil() {
                 <h1 className="font-anaheim text-xl font-bold mb-4 italic">Elaini Arte em Fios</h1>
 
                 <div className="flex justify-center items-center">
-                    <div className="relative w-[180px] h-[180px] rounded-full p-1 bg-gradient-to-r from-[#ffdbf4] via-[#db8cc3] to-[#97046b] tablet:w-[300px] tablet:h-[300px]">
+                    <div className="relative w-[180px] h-[180px] rounded-full p-1 bg-gradient-to-r from-light via-medium to-dark tablet:w-[300px] tablet:h-[300px]">
                         <img 
                             src="/public/perfil/foto-perfil.png" 
                             alt="Foto de Perfil"

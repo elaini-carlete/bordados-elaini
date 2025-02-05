@@ -68,7 +68,7 @@ export default function Trabalhos() {
                         <ul className="flex gap-x-4">
                             {items.slice(index, index + itemsPerView).map(item => (
                                 <li key={item}>
-                                    <img className="w-56 object-cover shadow-lg shadow-pink-500/50 rounded-lg" src={`/public/${title.toLowerCase()}/${item}.png`} alt={item.replace('-', ' ')} />
+                                    <img className="w-56 object-cover shadow-lg shadow-dark/50 rounded-lg" src={`/public/${title.toLowerCase()}/${item}.png`} alt={item.replace('-', ' ')} />
                                 </li>
                             ))}
                         </ul>

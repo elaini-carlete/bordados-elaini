@@ -6,11 +6,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: theme('colors.light');
 }
 
 body{
-  background-color: #ffdbf4;
   height: 100vh;
-  margin-right: 50px;
-  margin-left: 50px;
 }

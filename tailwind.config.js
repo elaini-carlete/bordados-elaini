@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        dark: "#97046b",
+        dark: "#dd68c2",
         medium: "#db8cc3",
         light: "#ffdbf4",
       },
@@ -20,15 +20,6 @@ export default {
         mobile: "408px",
         tablet: "768px",
         desktop: "1200px",
-      },
-      keyframes: {
-        colorPulse: {
-          "0%, 100%": { borderColor: "#97046b" },
-          "50%": { borderColor: "#db8cc3" },
-        },
-      },
-      animation: {
-        colorPulse: "colorPulse 2s infinite",
       },
     },
   },
