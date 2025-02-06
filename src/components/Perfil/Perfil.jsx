@@ -2,7 +2,7 @@ export default function Perfil() {
     return (
         <div className="flex justify-center items-center text-center mt-16">
             <div className="w-10/12 p-6 rounded-2xl shadow-lg desktop:w-6/12">
-                <h1 className="font-anaheim text-xl font-bold mb-4 italic">Elaini Arte em Fios</h1>
+                <h1 className="font-anaheim text-3xl font-bold mb-4 italic">Elaini Arte em Fios</h1>
 
                 <div className="flex justify-center items-center">
                     <div className="relative w-[180px] h-[180px] rounded-full p-1 bg-gradient-to-r from-light via-medium to-dark tablet:w-[300px] tablet:h-[300px]">
