@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 
 const categorias = [
-    { titulo: "Chaveiros P", preco: "10,00", imagens: ["/public/chaveiros/chaveiro-letra-e-rosa.png", "/public/chaveiros/chaveiro-letra-e-preta.png", "/public/chaveiros/chaveiro-letra-a-amarela.png"] },
-    { titulo: "Chaveiros M", preco: "15,00", imagens: ["/public/chaveiros/chaveiro-borboleta-azul.png", "/public/chaveiros/chaveiro-letra-b-roxa.png", "/public/chaveiros/chaveiro-borboleta-laranja.png", "/public/chaveiros/chaveiro-borboleta-roxa.png", "/public/chaveiros/chaveiro-letra-g-azul.png", "/public/chaveiros/chaveiro-borboleta-verde.png", "/public/chaveiros/chaveiro-letra-a-azul.png", "/public/chaveiros/chaveiro-calopsita.png", "/public/chaveiros/chaveiro-naruto.png", "/public/chaveiros/chaveiro-zoro.png", "/public/chaveiros/chaveiro-luffy.png", "/public/chaveiros/chaveiro-darth-vader.png", "/public/chaveiros/enfeite-papai-noel.png", "/public/chaveiros/chaveiro-pokebola.png"] },
-    { titulo: "Chaveiros G", preco: "20,00", imagens: ["/public/chaveiros/chaveiro-chopper.png", "/public/chaveiros/chaveiro-godzilla.png", "/public/chaveiros/chaveiro-noite-estrelada.png", "/public/chaveiros/chaveiro-anya.png"] },
-    { titulo: "Brincos P", preco: "5,00", imagens: ["/public/brincos/brinco-abelha.png", "/public/brincos/brinco-borboleta-verde.png", "/public/brincos/brinco-cogumelo.png", "/public/brincos/brinco-borboleta-roxa.png", "/public/brincos/brinco-pata-de-gato.png", "/public/brincos/brinco-coracao.png"] },
-    { titulo: "Toalhas de Mão", preco: "30,00", imagens: ["/public/toalhas/toalha-elisa.png", "/public/toalhas/toalha-maria.png", "/public/toalhas/toalha-henrique.png", "/public/toalhas/toalha-sophia.png"] },
-    { titulo: "Chaveiros Casal", preco: "30,00", imagens: ["/public/chaveiros/chaveiro-stitch.png"] },
-    { titulo: "Panos com Crochê", preco: "100,00", imagens: ["/public/toalhas/toalha-florida.png"] },
-    { titulo: "Toalhas de Banho", preco: "200,00", imagens: ["/public/toalhas/toalha-brayan.png"] },
+    { titulo: "Chaveiros P", preco: "10,00", imagens: ["/chaveiros/chaveiro-letra-e-rosa.png", "/chaveiros/chaveiro-letra-e-preta.png", "/chaveiros/chaveiro-letra-a-amarela.png"] },
+    { titulo: "Chaveiros M", preco: "15,00", imagens: ["/chaveiros/chaveiro-borboleta-azul.png", "/chaveiros/chaveiro-letra-b-roxa.png", "/chaveiros/chaveiro-borboleta-laranja.png", "/chaveiros/chaveiro-borboleta-roxa.png", "/chaveiros/chaveiro-letra-g-azul.png", "/chaveiros/chaveiro-borboleta-verde.png", "/chaveiros/chaveiro-letra-a-azul.png", "/chaveiros/chaveiro-calopsita.png", "/chaveiros/chaveiro-naruto.png", "/chaveiros/chaveiro-zoro.png", "/chaveiros/chaveiro-luffy.png", "/chaveiros/chaveiro-darth-vader.png", "/chaveiros/enfeite-papai-noel.png", "/chaveiros/chaveiro-pokebola.png"] },
+    { titulo: "Chaveiros G", preco: "20,00", imagens: ["/chaveiros/chaveiro-chopper.png", "/chaveiros/chaveiro-godzilla.png", "/chaveiros/chaveiro-noite-estrelada.png", "/chaveiros/chaveiro-anya.png"] },
+    { titulo: "Brincos P", preco: "5,00", imagens: ["/brincos/brinco-abelha.png", "/brincos/brinco-borboleta-verde.png", "/brincos/brinco-cogumelo.png", "/brincos/brinco-borboleta-roxa.png", "/brincos/brinco-pata-de-gato.png", "/brincos/brinco-coracao.png"] },
+    { titulo: "Toalhas de Mão", preco: "30,00", imagens: ["/toalhas/toalha-elisa.png", "/toalhas/toalha-maria.png", "/toalhas/toalha-henrique.png", "/toalhas/toalha-sophia.png"] },
+    { titulo: "Chaveiros Casal", preco: "30,00", imagens: ["/chaveiros/chaveiro-stitch.png"] },
+    { titulo: "Panos com Crochê", preco: "100,00", imagens: ["/toalhas/toalha-florida.png"] },
+    { titulo: "Toalhas de Banho", preco: "200,00", imagens: ["/toalhas/toalha-brayan.png"] },
 ];
 export default function Valores() {
     const [itemsPerView, setItemsPerView] = useState(1);
