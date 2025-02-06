@@ -4,7 +4,7 @@ export default function Header() {
     return (
         <header className="font-inter flex flex-col desktop:flex-row desktop:justify-around desktop:items-center">
             <a className="flex justify-center">
-                <img className="w-52" src="/public/logo-bordados-elaini-preview.png" alt="Logo" />
+                <img className="w-52" src="/logo-bordados-elaini-preview.png" alt="Logo" />
             </a>
 
             <div className="flex justify-around items-center desktop:gap-20">

@@ -7,7 +7,7 @@ export default function Perfil() {
                 <div className="flex justify-center items-center">
                     <div className="relative w-[180px] h-[180px] rounded-full p-1 bg-gradient-to-r from-light via-medium to-dark tablet:w-[300px] tablet:h-[300px]">
                         <img 
-                            src="/public/perfil/foto-perfil.png" 
+                            src="/perfil/foto-perfil.png" 
                             alt="Foto de Perfil"
                             className="w-full h-full object-cover rounded-full"
                         />

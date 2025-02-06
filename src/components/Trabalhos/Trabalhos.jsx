@@ -62,13 +62,13 @@ export default function Trabalhos() {
                             className={`p-2 w-8 h-8 rotate-180 transition-opacity duration-200 ease-in-out 
                 ${index === 0 ? 'opacity-50 cursor-not-allowed' : 'hover:opacity-70 active:scale-90'}`}
                         >
-                            <img src="/public/seta.png" alt="Seta" />
+                            <img src="/seta.png" alt="Seta" />
                         </button>
                         
                         <ul className="flex gap-x-4">
                             {items.slice(index, index + itemsPerView).map(item => (
                                 <li key={item}>
-                                    <img className="w-56 object-cover shadow-lg shadow-dark/50 rounded-lg" src={`/public/${title.toLowerCase()}/${item}.png`} alt={item.replace('-', ' ')} />
+                                    <img className="w-56 object-cover shadow-lg shadow-dark/50 rounded-lg" src={`/${title.toLowerCase()}/${item}.png`} alt={item.replace('-', ' ')} />
                                 </li>
                             ))}
                         </ul>
@@ -79,7 +79,7 @@ export default function Trabalhos() {
                             className={`p-2 w-8 h-8 transition-opacity duration-200 ease-in-out 
                 ${index + itemsPerView >= items.length ? 'opacity-50 cursor-not-allowed' : 'hover:opacity-70 active:scale-90'}`}
                         >
-                            <img src="/public/seta.png" alt="Seta" />
+                            <img src="/seta.png" alt="Seta" />
                         </button>
                     </div>
                 </div>

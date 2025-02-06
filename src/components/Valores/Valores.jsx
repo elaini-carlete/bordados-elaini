@@ -52,7 +52,7 @@ export default function Valores() {
                     disabled={index === 0}
                     className={`p-2 w-8 h-8 rotate-180 transition-opacity duration-200 ease-in-out ${index === 0 ? 'opacity-50 cursor-not-allowed' : 'hover:opacity-70 active:scale-90'}`}
                 >
-                    <img src="/public/seta.png" alt="Seta" />
+                    <img src="/seta.png" alt="Seta" />
                 </button>
 
                 <div className="flex gap-4">
@@ -66,7 +66,7 @@ export default function Valores() {
                     disabled={index + itemsPerView >= categorias.length}
                     className={`p-2 w-8 h-8 transition-opacity duration-200 ease-in-out ${index + itemsPerView >= categorias.length ? 'opacity-50 cursor-not-allowed' : 'hover:opacity-70 active:scale-90'}`}
                 >
-                    <img src="/public/seta.png" alt="Seta" />
+                    <img src="/seta.png" alt="Seta" />
                 </button>
             </div>
         </div>
@@ -85,7 +85,7 @@ function Categoria({ titulo, preco, imagens }) {
             <div className="flex items-center justify-center">
                 {imagens.length > 1 && (
                     <button onClick={imagemAnterior} className="p-1 w-16 h-16 rotate-180">
-                        <img src="/public/seta.png" alt="Anterior" />
+                        <img src="/seta.png" alt="Anterior" />
                     </button>
                 )}
 
@@ -93,7 +93,7 @@ function Categoria({ titulo, preco, imagens }) {
 
                 {imagens.length > 1 && (
                     <button onClick={proximaImagem} className="p-1 w-16 h-16">
-                        <img src="/public/seta.png" alt="Próxima" />
+                        <img src="/seta.png" alt="Próxima" />
                     </button>
                 )}
             </div>
