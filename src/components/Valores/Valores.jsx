@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 
 const categorias = [
-    { titulo: "Chaveiros P", preco: "10,00", imagens: ["/chaveiros/chaveiro-letra-e-rosa.png", "/chaveiros/chaveiro-letra-e-preta.png", "/chaveiros/chaveiro-letra-a-amarela.png"] },
-    { titulo: "Chaveiros M", preco: "15,00", imagens: ["/chaveiros/chaveiro-borboleta-azul.png", "/chaveiros/chaveiro-letra-b-roxa.png", "/chaveiros/chaveiro-borboleta-laranja.png", "/chaveiros/chaveiro-borboleta-roxa.png", "/chaveiros/chaveiro-letra-g-azul.png", "/chaveiros/chaveiro-borboleta-verde.png", "/chaveiros/chaveiro-letra-a-azul.png", "/chaveiros/chaveiro-calopsita.png", "/chaveiros/chaveiro-naruto.png", "/chaveiros/chaveiro-zoro.png", "/chaveiros/chaveiro-luffy.png", "/chaveiros/chaveiro-darth-vader.png", "/chaveiros/enfeite-papai-noel.png", "/chaveiros/chaveiro-pokebola.png"] },
-    { titulo: "Chaveiros G", preco: "20,00", imagens: ["/chaveiros/chaveiro-chopper.png", "/chaveiros/chaveiro-godzilla.png", "/chaveiros/chaveiro-noite-estrelada.png", "/chaveiros/chaveiro-anya.png"] },
-    { titulo: "Brincos P", preco: "5,00", imagens: ["/brincos/brinco-abelha.png", "/brincos/brinco-borboleta-verde.png", "/brincos/brinco-cogumelo.png", "/brincos/brinco-borboleta-roxa.png", "/brincos/brinco-pata-de-gato.png", "/brincos/brinco-coracao.png"] },
-    { titulo: "Toalhas de Mão", preco: "30,00", imagens: ["/toalhas/toalha-elisa.png", "/toalhas/toalha-maria.png", "/toalhas/toalha-henrique.png", "/toalhas/toalha-sophia.png"] },
-    { titulo: "Chaveiros Casal", preco: "30,00", imagens: ["/chaveiros/chaveiro-stitch.png"] },
-    { titulo: "Panos com Crochê", preco: "100,00", imagens: ["/toalhas/toalha-florida.png"] },
-    { titulo: "Toalhas de Banho", preco: "200,00", imagens: ["/toalhas/toalha-brayan.png"] },
+    { titulo: "Chaveiros P", preco: "10,00", imagens: ["src/assets/chaveiros/chaveiro-letra-e-rosa.png", "src/assets/chaveiros/chaveiro-letra-e-preta.png", "src/assets/chaveiros/chaveiro-letra-a-amarela.png"] },
+    { titulo: "Chaveiros M", preco: "15,00", imagens: ["src/assets/chaveiros/chaveiro-borboleta-azul.png", "src/assets/chaveiros/chaveiro-letra-b-roxa.png", "src/assets/chaveiros/chaveiro-borboleta-laranja.png", "src/assets/chaveiros/chaveiro-borboleta-roxa.png", "src/assets/chaveiros/chaveiro-letra-g-azul.png", "src/assets/chaveiros/chaveiro-borboleta-verde.png", "src/assets/chaveiros/chaveiro-letra-a-azul.png", "src/assets/chaveiros/chaveiro-calopsita.png", "src/assets/chaveiros/chaveiro-naruto.png", "src/assets/chaveiros/chaveiro-zoro.png", "src/assets/chaveiros/chaveiro-luffy.png", "src/assets/chaveiros/chaveiro-darth-vader.png", "src/assets/chaveiros/enfeite-papai-noel.png", "src/assets/chaveiros/chaveiro-pokebola.png"] },
+    { titulo: "Chaveiros G", preco: "20,00", imagens: ["src/assets/chaveiros/chaveiro-chopper.png", "src/assets/chaveiros/chaveiro-godzilla.png", "src/assets/chaveiros/chaveiro-noite-estrelada.png", "src/assets/chaveiros/chaveiro-anya.png"] },
+    { titulo: "Brincos P", preco: "5,00", imagens: ["src/assets/brincos/brinco-abelha.png", "src/assets/brincos/brinco-borboleta-verde.png", "src/assets/brincos/brinco-cogumelo.png", "src/assets/brincos/brinco-borboleta-roxa.png", "src/assets/brincos/brinco-pata-de-gato.png", "src/assets/brincos/brinco-coracao.png"] },
+    { titulo: "Toalhas de Mão", preco: "30,00", imagens: ["src/assets/toalhas/toalha-elisa.png", "src/assets/toalhas/toalha-maria.png", "src/assets/toalhas/toalha-henrique.png", "src/assets/toalhas/toalha-sophia.png"] },
+    { titulo: "Chaveiros Casal", preco: "30,00", imagens: ["src/assets/chaveiros/chaveiro-stitch.png"] },
+    { titulo: "Panos com Crochê", preco: "100,00", imagens: ["src/assets/toalhas/toalha-florida.png"] },
+    { titulo: "Toalhas de Banho", preco: "200,00", imagens: ["src/assets/toalhas/toalha-brayan.png"] },
 ];
 export default function Valores() {
     const [itemsPerView, setItemsPerView] = useState(1);
@@ -84,7 +84,7 @@ function Categoria({ titulo, preco, imagens }) {
             <h3 className="text-xl mb-2 italic">{titulo}</h3>
             <div className="flex items-center justify-center">
                 {imagens.length > 1 && (
-                    <button onClick={imagemAnterior} className="p-1 w-16 h-16 rotate-180">
+                    <button onClick={imagemAnterior} className="p-1 w-6 h-6 rotate-180">
                         <img src="/seta.png" alt="Anterior" />
                     </button>
                 )}
@@ -92,7 +92,7 @@ function Categoria({ titulo, preco, imagens }) {
                 <img src={imagens[indice]} alt={titulo} className="w-36 h-auto object-cover rounded" />
 
                 {imagens.length > 1 && (
-                    <button onClick={proximaImagem} className="p-1 w-16 h-16">
+                    <button onClick={proximaImagem} className="p-1 w-6 h-6">
                         <img src="/seta.png" alt="Próxima" />
                     </button>
                 )}
