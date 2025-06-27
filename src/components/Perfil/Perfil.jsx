@@ -1,3 +1,5 @@
+import perfil from "../../assets/perfil/foto-perfil.png";
+
 export default function Perfil() {
     return (
         <div className="flex justify-center items-center text-center mt-16">
@@ -7,7 +9,7 @@ export default function Perfil() {
                 <div className="flex justify-center items-center">
                     <div className="relative w-[180px] h-[180px] rounded-full p-1 bg-gradient-to-r from-light via-medium to-dark tablet:w-[300px] tablet:h-[300px]">
                         <img 
-                            src="src/assets/perfil/foto-perfil.png" 
+                            src={perfil} 
                             alt="Foto de Perfil"
                             className="w-full h-full object-cover rounded-full"
                         />
