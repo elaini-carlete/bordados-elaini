@@ -1,10 +1,11 @@
 import { Link } from "react-scroll";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import logo from "../../assets/logo/logo.png";
 export default function Header() {
     return (
         <header className="font-inter flex flex-col desktop:flex-row desktop:justify-around desktop:items-center mt-8">
             <a className="flex justify-center">
-                <img className="w-52" src="src/assets/logo/logo.png" alt="Logo" />
+                <img className="w-52" src={logo} alt="Logo" />
             </a>
 
             <div className="flex justify-around items-center desktop:gap-20">
