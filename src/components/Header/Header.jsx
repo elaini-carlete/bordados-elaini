@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 export default function Header() {
     return (
-        <header className="font-inter flex flex-col desktop:flex-row desktop:justify-around desktop:items-center">
+        <header className="font-inter flex flex-col desktop:flex-row desktop:justify-around desktop:items-center mt-8">
             <a className="flex justify-center">
                 <img className="w-52" src="src/assets/logo/logo.png" alt="Logo" />
             </a>

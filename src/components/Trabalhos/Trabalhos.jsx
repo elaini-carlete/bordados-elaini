@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 export default function Trabalhos() {
     const chaveiros = [
-        'chaveiro-borboleta-azul', 'chaveiro-letra-b-roxa', 'chaveiro-chopper', 'chaveiro-borboleta-laranja',
+        'chaveiro-borboleta-azul','chaveiro-todoroki','chaveiro-aparecida','chaveiro-letra-m-laranja','chaveiro-bts','chaveiro-letra-b-roxa', 'chaveiro-chopper', 'chaveiro-borboleta-laranja',
         'chaveiro-darth-vader', 'chaveiro-borboleta-roxa', 'chaveiro-letra-g-azul', 'chaveiro-borboleta-verde',
         'chaveiro-letra-a-azul', 'enfeite-papai-noel', 'chaveiro-calopsita', 'chaveiro-godzilla',
         'chaveiro-naruto', 'chaveiro-noite-estrelada', 'chaveiro-pokebola', 'chaveiro-stitch', 'chaveiro-letra-e-rosa',
