@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
 
+import chaveiroLetraL from '../../assets/chaveiros/chaveiro-letra-l.jpg';
+import chaveiroLetraF from '../../assets/chaveiros/chaveiro-letra-f.jpg';
+import chaveiroNomes from '../../assets/chaveiros/chaveiro-nomes.jpg';
+import chaveiroShadow from '../../assets/chaveiros/chaveiro-shadow.jpg';
 import borboletaAzul from '../../assets/chaveiros/chaveiro-borboleta-azul.png';
 import chaveiroTodoroki from '../../assets/chaveiros/chaveiro-todoroki.png';
 import chaveiroAparecida from '../../assets/chaveiros/chaveiro-aparecida.png';
@@ -35,6 +39,7 @@ import brincoPataDeGato from '../../assets/brincos/brinco-pata-de-gato.png';
 import brincoCoracao from '../../assets/brincos/brinco-coracao.png';
 
 import toalhaBrayan from '../../assets/toalhas/toalha-brayan.png';
+import toalhaHugo from '../../assets/toalhas/toalha-hugo.jpg';
 import toalhaElisa from '../../assets/toalhas/toalha-elisa.png';
 import toalhaMaria from '../../assets/toalhas/toalha-maria.png';
 import toalhaHenrique from '../../assets/toalhas/toalha-henrique.png';
@@ -43,9 +48,13 @@ import toalhaFlorida from '../../assets/toalhas/toalha-florida.png';
 
 export default function Trabalhos() {
     const chaveiros = {
+        chaveiroShadow,
         borboletaAzul,
         chaveiroTodoroki,
         chaveiroAparecida,
+        chaveiroLetraL,
+        chaveiroLetraF,
+        chaveiroNomes,
         chaveiroLetraMLaranja,
         chaveiroBts,
         chaveiroLetraBRoxa,
@@ -80,6 +89,7 @@ export default function Trabalhos() {
     ];
     const toalhas = [
         toalhaBrayan,
+        toalhaHugo,
         toalhaElisa,
         toalhaMaria,
         toalhaHenrique,

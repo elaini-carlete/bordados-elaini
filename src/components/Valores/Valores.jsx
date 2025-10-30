@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
 
+import chaveiroLetraL from '../../assets/chaveiros/chaveiro-letra-l.jpg';
+import chaveiroLetraF from '../../assets/chaveiros/chaveiro-letra-f.jpg';
+import chaveiroNomes from '../../assets/chaveiros/chaveiro-nomes.jpg';
+import chaveiroShadow from '../../assets/chaveiros/chaveiro-shadow.jpg';
 import borboletaAzul from '../../assets/chaveiros/chaveiro-borboleta-azul.png';
 import chaveiroTodoroki from '../../assets/chaveiros/chaveiro-todoroki.png';
 import chaveiroAaparecida from '../../assets/chaveiros/chaveiro-aparecida.png'; // Corrected typo here
@@ -35,6 +39,7 @@ import brincoPataDeGato from '../../assets/brincos/brinco-pata-de-gato.png';
 import brincoCoracao from '../../assets/brincos/brinco-coracao.png';
 
 import toalhaBrayan from '../../assets/toalhas/toalha-brayan.png';
+import toalhaHugo from '../../assets/toalhas/toalha-hugo.jpg';
 import toalhaElisa from '../../assets/toalhas/toalha-elisa.png';
 import toalhaMaria from '../../assets/toalhas/toalha-maria.png';
 import toalhaHenrique from '../../assets/toalhas/toalha-henrique.png';
@@ -42,6 +47,10 @@ import toalhaSophia from '../../assets/toalhas/toalha-sophia.png';
 import toalhaFlorida from '../../assets/toalhas/toalha-florida.png';
 
 const imageMap = {
+    chaveiroLetraL,
+    chaveiroLetraF,
+    chaveiroNomes,
+    chaveiroShadow,
     borboletaAzul,
     chaveiroTodoroki,
     chaveiroAaparecida,
@@ -77,6 +86,7 @@ const imageMap = {
     brincoCoracao,
 
     toalhaBrayan,
+    toalhaHugo,
     toalhaElisa,
     toalhaMaria,
     toalhaHenrique,
@@ -85,14 +95,14 @@ const imageMap = {
 };
 
 const categorias = [
-    { titulo: "Chaveiros P", preco: "9,99", imagens: ["chaveiroLetraERosa", "chaveiroLetraEPreta", "chaveiroLetraAAmarela", "chaveiroBts"] },
-    { titulo: "Chaveiros M", preco: "14,99", imagens: ["borboletaAzul", "chaveiroLetraBRoxa", "chaveiroBorboletaLaranja", "chaveiroBorboletaRoxa", "chaveiroLetraMLaranja", "chaveiroLetraGAzul", "chaveiroBorboletaVerde", "chaveiroLetraAAzul", "chaveiroCalopsita", "chaveiroNaruto", "chaveiroZoro", "chaveiroLuffy", "chaveiroDarthVader", "enfeitePapaiNoel", "chaveiroPokebola"] },
-    { titulo: "Chaveiros G", preco: "19,99", imagens: ["chaveiroChopper", "chaveiroTodoroki", "chaveiroAaparecida", "chaveiroGodzilla", "chaveiroNoiteEstrelada", "chaveiroAnya"] },
-    { titulo: "Brincos P", preco: "4,99", imagens: ["brincoAbelha", "brincoBorboletaVerde", "brincoCogumelo", "brincoBorboletaRoxa", "brincoPataDeGato", "brincoCoracao"] },
-    { titulo: "Toalhas de Mão", preco: "32,99", imagens: ["toalhaElisa", "toalhaMaria", "toalhaHenrique", "toalhaSophia"] },
-    { titulo: "Chaveiros Casal", preco: "29,99", imagens: ["chaveiroStitch"] },
-    { titulo: "Panos com Crochê", preco: "79,99", imagens: ["toalhaFlorida"] },
-    { titulo: "Toalhas de Banho", preco: "159,99", imagens: ["toalhaBrayan"] },
+    { titulo: "Chaveiros P", preco: "10,00", imagens: ["chaveiroLetraERosa", "chaveiroLetraEPreta", "chaveiroLetraAAmarela", "chaveiroBts", "chaveiroLetraF", "chaveiroLetraL"] },
+    { titulo: "Chaveiros M", preco: "15,00", imagens: ["borboletaAzul", "chaveiroLetraBRoxa", "chaveiroBorboletaLaranja", "chaveiroBorboletaRoxa", "chaveiroLetraMLaranja", "chaveiroLetraGAzul", "chaveiroBorboletaVerde", "chaveiroLetraAAzul", "chaveiroCalopsita", "chaveiroNaruto", "chaveiroZoro", "chaveiroLuffy", "chaveiroDarthVader", "enfeitePapaiNoel", "chaveiroPokebola"] },
+    { titulo: "Chaveiros G", preco: "20,00", imagens: ["chaveiroChopper", "chaveiroTodoroki", "chaveiroAaparecida", "chaveiroShadow", "chaveiroNomes", "chaveiroGodzilla", "chaveiroNoiteEstrelada", "chaveiroAnya"] },
+    { titulo: "Brincos P", preco: "5,00", imagens: ["brincoAbelha", "brincoBorboletaVerde", "brincoCogumelo", "brincoBorboletaRoxa", "brincoPataDeGato", "brincoCoracao"] },
+    { titulo: "Toalhas de Mão", preco: "30,00", imagens: ["toalhaElisa", "toalhaMaria", "toalhaHenrique", "toalhaSophia"] },
+    { titulo: "Chaveiros Casal", preco: "30,00", imagens: ["chaveiroStitch"] },
+    { titulo: "Panos com Crochê", preco: "75,00", imagens: ["toalhaFlorida"] },
+    { titulo: "Toalhas de Banho", preco: "150,00", imagens: ["toalhaBrayan", "toalhaHugo"] },
 ];
 
 export default function Valores() {
