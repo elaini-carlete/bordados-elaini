@@ -4,7 +4,6 @@ Desenvolvi este site para compartilhar meu hobby de bordado e exibir minhas cria
 ## Objetivos:
 - Apresentar um pouco sobre minha trajetória no universo do bordado
 - Exibir minhas criações de forma organizada
-- Informar os valores das peças para interessados na compra
 - Disponibilizar meus canais de contato para pedidos e encomendas
 
 ## Dificuldades:
@@ -18,12 +17,12 @@ Desenvolvi este site para compartilhar meu hobby de bordado e exibir minhas cria
 ## Screenshots
 
 ### Desktop
-![](./public/design/bordados-elaini-desktop.gif)
+![]()
 
 ### Tablet
 
-![](./public/design/bordados-elaini-tablet.gif)
+![]()
 
 ### Mobile
 
-![](./public/design/bordados-elaini-mobile.gif)
+![]()

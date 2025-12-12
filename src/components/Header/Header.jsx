@@ -18,9 +18,6 @@ export default function Header() {
                             <Link to="trabalhos" smooth={true} duration={500}>Meus Trabalhos</Link>
                         </li>
                         <li className="border-l-2 border-dark pl-2 cursor-pointer tablet:border-none">
-                            <Link to="valores" smooth={true} duration={500}>Valores</Link>
-                        </li>
-                        <li className="border-l-2 border-dark pl-2 cursor-pointer tablet:border-none">
                             <Link to="atendimentos" smooth={true} duration={500}>Atendimento</Link>
                         </li>
                     </ul>
