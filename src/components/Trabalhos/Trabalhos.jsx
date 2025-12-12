@@ -46,6 +46,14 @@ import toalhaHenrique from '../../assets/toalhas/toalha-henrique.png';
 import toalhaSophia from '../../assets/toalhas/toalha-sophia.png';
 import toalhaFlorida from '../../assets/toalhas/toalha-florida.png';
 
+import bastidorLuise from '../../assets/bastidores/bastidor-luise.jpg';
+import bastidorNossaSenhoraDasGraças from '../../assets/bastidores/bastidor-nossa-senhora-das-gracas.jpg';
+import bastidorRosa from '../../assets/bastidores/bastidor-rosa.jpg';
+import bastidorFlorDeCerejeira from '../../assets/bastidores/bastidor-flor-de-cerejeira.jpg';
+import bastidorGatoLivros from '../../assets/bastidores/bastidor-gato-e-livros.jpg';
+import bastidorGatoEnrolado from '../../assets/bastidores/bastidor-gato-enrolado.jpg';
+import bastidorGatoCozinha from '../../assets/bastidores/bastidor-gato-cozinha.jpg';
+
 export default function Trabalhos() {
     const chaveiros = {
         chaveiroShadow,
@@ -96,10 +104,20 @@ export default function Trabalhos() {
         toalhaSophia,
         toalhaFlorida
     ];
+    const bastidores = [
+        bastidorLuise,
+        bastidorNossaSenhoraDasGraças,
+        bastidorRosa,
+        bastidorFlorDeCerejeira,
+        bastidorGatoLivros,
+        bastidorGatoEnrolado,
+        bastidorGatoCozinha
+    ];
 
+    const [indexBastidores, setIndexBastidores] = useState(0);
+    const [indexToalhas, setIndexToalhas] = useState(0);
     const [indexChaveiros, setIndexChaveiros] = useState(0);
     const [indexBrincos, setIndexBrincos] = useState(0);
-    const [indexToalhas, setIndexToalhas] = useState(0);
     const [itemsPerView, setItemsPerView] = useState(1);
 
     useEffect(() => {
@@ -131,9 +149,10 @@ export default function Trabalhos() {
         <div className="text-center mt-20">
             <h2 className="font-anaheim text-2xl font-bold">Meus Trabalhos</h2>
 
-            {[{ title: "Chaveiros", items: Object.values(chaveiros), index: indexChaveiros, setIndex: setIndexChaveiros }, // Use Object.values for chaveiros
-              { title: "Brincos", items: brincos, index: indexBrincos, setIndex: setIndexBrincos },
-              { title: "Toalhas", items: toalhas, index: indexToalhas, setIndex: setIndexToalhas }].map(({ title, items, index, setIndex }) => (
+            {[{ title: "Bastidores", items: bastidores, index: indexBastidores, setIndex: setIndexBastidores },
+              { title: "Toalhas", items: toalhas, index: indexToalhas, setIndex: setIndexToalhas },
+              { title: "Chaveiros", items: Object.values(chaveiros), index: indexChaveiros, setIndex: setIndexChaveiros }, // Use Object.values for chaveiros
+              { title: "Brincos", items: brincos, index: indexBrincos, setIndex: setIndexBrincos }].map(({ title, items, index, setIndex }) => (
                 <div key={title} className="mt-6">
                     <h3 className="font-comme text-xl italic pb-4">{title}:</h3>
                     <div className="flex items-center justify-center gap-4">
@@ -148,9 +167,9 @@ export default function Trabalhos() {
 
                         <ul className="flex gap-x-4">
                             {items.slice(index, index + itemsPerView).map((item, idx) => (
-                                <li key={item + idx}>
+                                <li key={item + idx} className="w-80 h-60">
                                     <img
-                                        className="w-56 object-cover shadow-lg shadow-dark/50 rounded-lg"
+                                        className="w-full h-full object-cover shadow-lg shadow-dark/50 rounded-lg"
                                         src={item}
                                         alt={`Item de ${title} ${idx}`}
                                     />
