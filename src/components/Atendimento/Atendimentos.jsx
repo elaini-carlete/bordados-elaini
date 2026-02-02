@@ -1,7 +1,7 @@
 export default function Atendimentos() { 
     return (
         <div className="flex flex-col items-center align-center justify-center text-center mt-20">
-            <h2 className="font-anaheim text-2xl font-bold">Atendimento</h2>
+            <h2 className="font-anaheim text-2xl font-bold">Atendimento e Orçamento</h2>
 
             <div className="mt-5 flex flex-col items-center justify-center">
                 <p className="font-comme bg-white p-6 shadow-lg shadow-dark/50 mb-10 text-lg w-10/12 tablet:w-6/12">

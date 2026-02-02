@@ -20,3 +20,8 @@ function App() {
 }
 
 export default App;
+
+// Falta:
+// Ajeitar imagens dos chaveiros
+// Colocar todas as imagens em outro arquivo
+// Mudar logo

@@ -109,9 +109,9 @@ export default function Trabalhos() {
         bastidorNossaSenhoraDasGraças,
         bastidorRosa,
         bastidorFlorDeCerejeira,
-        bastidorGatoLivros,
         bastidorGatoEnrolado,
-        bastidorGatoCozinha
+        bastidorGatoCozinha,
+        bastidorGatoLivros
     ];
 
     const [indexBastidores, setIndexBastidores] = useState(0);
@@ -167,7 +167,7 @@ export default function Trabalhos() {
 
                         <ul className="flex gap-x-4">
                             {items.slice(index, index + itemsPerView).map((item, idx) => (
-                                <li key={item + idx} className="w-80 h-60">
+                                <li key={item + idx} className="w-80 h-64">
                                     <img
                                         className="w-full h-full object-cover shadow-lg shadow-dark/50 rounded-lg"
                                         src={item}
