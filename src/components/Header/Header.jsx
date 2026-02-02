@@ -26,7 +26,7 @@ export default function Header() {
                 <div>
                     <ul className="flex gap-5 mobile:flex-row">
                         <li className="border-double border-4 border-dark p-2 rounded-full">
-                            <a className="text-2xl" href="https://www.instagram.com/bordados_elaini/" target="_blank"><FaInstagram /></a>
+                            <a className="text-2xl" href="https://www.instagram.com/bordadoselaini/" target="_blank"><FaInstagram /></a>
                         </li>
                         <li className="border-double border-4 border-dark p-2 rounded-full">
                             <a className="text-2xl" href="https://wa.me/qr/H6QSKNMQNLDYI1" target="_blank"><FaWhatsapp /></a>

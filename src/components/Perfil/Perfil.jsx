@@ -17,7 +17,7 @@ export default function Perfil() {
                 </div>
 
                 <p className="font-comme bg-white rounded-xl p-4 mt-4 text-sm">
-                    Meu nome é Elaini e aprendi a arte do bordado na adolescência, influenciada por minha família. Desde então, continuei aprendendo novas técnicas e me aperfeiçoando. Hoje, além de bordar toalhas, também faço bastidores, chaveiros e brincos personalizados em ponto cruz! Por fim, fico feliz em compartilhar a grande paixão que tenho pela Arte em Fios.
+                    Meu nome é Elaini e aprendi a arte do bordado na adolescência, influenciada por minha família. Desde então, continuei aprendendo novas técnicas e me aperfeiçoando. Hoje, além de bordar toalhas, também faço bastidores, chaveiros e brincos personalizados com diferentes tipos de pontos! Por fim, fico feliz em compartilhar a grande paixão que tenho pela Arte em Fios.
                 </p>
             </div>
         </div>
